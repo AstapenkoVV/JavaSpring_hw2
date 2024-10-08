@@ -6,9 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class Scoreboard {
     @Autowired
-    public TicketNumberGenerator ticketNumberGenerator;
+    private TicketNumberGenerator ticketNumberGenerator;
 
-    public Ticket ticket;
+    private Ticket ticket;
 
     public Ticket newTicket() {
         ticket = new Ticket(ticketNumberGenerator);
